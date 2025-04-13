@@ -49,6 +49,10 @@ func Parse() *Addr {
 		"94.102.14.5/24",
 		"2a03:2100:a::/48",
 		"2a03:2100:b::/48",
+
+		// GCore IPs
+		"92.223.76.0/24",
+		"92.223.120.0/23",
 	}
 	return &Addr{
 		Forwarders: append(local_prefixes, waf_prefixes...),
